@@ -1,4 +1,4 @@
-const countdown = new Date(Date.parse(new Date()) + 99 * 24 * 60 * 60 * 1000);
+const countdown = new Date("Apr 25, 2024 12:00:00").getTime();
 
 const days = document.querySelector(".days").querySelector(".flip-card");
 const hours = document.querySelector(".hours").querySelector(".flip-card");
@@ -7,7 +7,7 @@ const seconds = document.querySelector(".seconds").querySelector(".flip-card");
 
 // ** get the time totals, return them
 function getTimeRemaining(countdown) {
-  const now = new Date();
+  const now = new Date().getTime();
   const diff = countdown - now;
 
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
