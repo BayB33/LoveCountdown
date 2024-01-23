@@ -55,8 +55,12 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background: url(https://raw.githubusercontent.com/alleycaaat/frontend-mentor/main/countdown-timer/images/bg-stars.svg),
-    linear-gradient(0deg, $lightBG 33%, $darkBG 50%);
+  background-image: url(mariage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*background: url(https://raw.githubusercontent.com/alleycaaat/frontend-mentor/main/countdown-timer/images/bg-stars.svg),
+    linear-gradient(0deg, $lightBG 33%, $darkBG 50%);*/
 }
 
 h1 {
