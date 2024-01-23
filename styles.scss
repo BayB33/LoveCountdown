@@ -1,18 +1,28 @@
-$greyBlue: hsl(237, 18%, 59%);
-$red: hsl(345, 95%, 68%);
-$topRed: hsl(345, 62%, 57%);
+/*$greyBlue: hsl(237, 18%, 59%);*/
+$greyBlue: hsl(20, 86%, 3%);
+/*$red: hsl(345, 95%, 68%);*/
+$red: hsl(345, 75%, 43%);
+/*$topRed: hsl(345, 62%, 57%);*/
+$topRed: hsl(345, 65%, 52%);
+/*$white: hsl(0, 0%, 100%);*/
 $white: hsl(0, 0%, 100%);
 
-$desatBlue: hsl(236, 21%, 26%);
-$vDarkBlue: rgb(30, 31, 41);
-$vvDarkBlue: rgb(25, 26, 36);
+/*$desatBlue: hsl(236, 21%, 26%);*/
+$desatBlue: hsl(32, 97%, 54%);
+/*$vDarkBlue: rgb(30, 31, 41);*/
+$vDarkBlue: rgb(0, 0, 0);
+/*$vvDarkBlue: rgb(25, 26, 36);*/
+$vvDarkBlue: rgba(49, 29, 0, 0.633);
 
-$top-card: rgb(44, 44, 68);
+/*$top-card: rgb(44, 44, 68);*/
+$top-card: rgb(246, 143, 40);
 $lightBG: rgba(37, 29, 44, 1);
 $darkBG: rgba(30, 30, 40, 1);
 
-$box-shadow: 0 7px 3px 0 rgb(21, 21, 21);
-$half-shadow: 0 3px rgba(71, 83, 115, 0.2) inset;
+/*$box-shadow: 0 7px 3px 0 rgb(21, 21, 21);*/
+$box-shadow: 0 7px 3px 0 rgb(148, 32, 11);
+/*$half-shadow: 0 3px rgba(71, 83, 115, 0.2) inset;*/
+$half-shadow: 0 3px rgba(201, 90, 0, 0.2) inset;
 
 @mixin notches {
   content: "";
@@ -66,12 +76,14 @@ body {
 h1 {
   text-transform: uppercase;
   color: $white;
+  text-shadow: rgb(201, 0, 0) 1px 0 10px;
   text-align: center;
   margin-bottom: 50px;
   letter-spacing: 5px;
 }
 
 main {
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,7 +97,8 @@ main {
       text-align: center;
       font-size: 25px;
       p {
-        color: $greyBlue;
+        color: white;
+        text-shadow: rgb(201, 0, 0) 1px 0 10px;
         font-size: 11px;
         letter-spacing: 3px;
         text-transform: uppercase;
@@ -175,7 +188,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(https://raw.githubusercontent.com/alleycaaat/frontend-mentor/main/countdown-timer/images/pattern-hills.svg);
+  /*background-image: url(https://raw.githubusercontent.com/alleycaaat/frontend-mentor/main/countdown-timer/images/pattern-hills.svg);*/
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -225,5 +238,13 @@ footer {
         padding: 34px 7px !important;
       }
     }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-image: url(mariage2.jpg);
+    background-repeat: no-repeat;
+    background-size: 450px 667px;
   }
 }
