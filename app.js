@@ -1,4 +1,4 @@
-const countdown = new Date("Apr 25, 2024 12:00:00").getTime();
+const countdown = new Date("Apr 23, 2024 18:00:00").getTime();
 
 const days = document.querySelector(".days").querySelector(".flip-card");
 const hours = document.querySelector(".hours").querySelector(".flip-card");
